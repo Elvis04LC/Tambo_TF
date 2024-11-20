@@ -34,16 +34,18 @@
 - **Base de datos**: SQL Server.
 - **Sistema operativo**: Windows 10 o superior.
 
-Estructura del proyecto
-Datos: Capa encargada de interactuar con la base de datos.
-Negocio: Capa de lógica de negocio y validaciones.
-TPTAMBO: Interfaz de usuario y formularios principales.
-Colaboradores
-[Elvis Larico] 
-[Adrian Ruiz]
-[Stefany Peña]
-[Fabrizio Palomino]
-[Joao Ñaña]
-Licencia
-Este proyecto es de uso privado y no está permitido su distribución sin autorización previa.
+## Estructura del proyecto
 
+- **Datos:** Capa encargada de interactuar con la base de datos.
+- **Negocio:** Capa de lógica de negocio y validaciones.
+- **TPTAMBO:** Interfaz de usuario y formularios principales.
+
+## Colaboradores
+- Elvis Larico
+- Adrian Ruiz
+- Stefany Peña
+- Fabrizio Palomino
+- Joao Ñaña
+  
+## Licencia
+Este proyecto es de uso privado y no está permitido su distribución sin autorización previa.
