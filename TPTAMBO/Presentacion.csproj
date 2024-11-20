@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7390E023-098F-4412-B87B-97751E071BCB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TPTAMBO</RootNamespace>
+    <AssemblyName>TPTAMBO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormDetalleBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetalleBoleta.Designer.cs">
+      <DependentUpon>FormDetalleBoleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLBoletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLBoletas.Designer.cs">
+      <DependentUpon>FormLBoletas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLInventario.Designer.cs">
+      <DependentUpon>FormLInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductoInventario.Designer.cs">
+      <DependentUpon>FormProductoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRCategoria.Designer.cs">
+      <DependentUpon>FormRCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRProducto.Designer.cs">
+      <DependentUpon>FormRProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRSucursal.Designer.cs">
+      <DependentUpon>FormRSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRTrabajador.Designer.cs">
+      <DependentUpon>FormRTrabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSReporte1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSReporte1.Designer.cs">
+      <DependentUpon>FormSReporte1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSReporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSReporte2.Designer.cs">
+      <DependentUpon>FormSReporte2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSReporte3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSReporte3.Designer.cs">
+      <DependentUpon>FormSReporte3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSReporte4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSReporte4.Designer.cs">
+      <DependentUpon>FormSReporte4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSReporte5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSReporte5.Designer.cs">
+      <DependentUpon>FormSReporte5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDetalleBoleta.resx">
+      <DependentUpon>FormDetalleBoleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLBoletas.resx">
+      <DependentUpon>FormLBoletas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLInventario.resx">
+      <DependentUpon>FormLInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductoInventario.resx">
+      <DependentUpon>FormProductoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRCategoria.resx">
+      <DependentUpon>FormRCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRProducto.resx">
+      <DependentUpon>FormRProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRSucursal.resx">
+      <DependentUpon>FormRSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRTrabajador.resx">
+      <DependentUpon>FormRTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSReporte1.resx">
+      <DependentUpon>FormSReporte1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSReporte2.resx">
+      <DependentUpon>FormSReporte2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSReporte3.resx">
+      <DependentUpon>FormSReporte3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSReporte4.resx">
+      <DependentUpon>FormSReporte4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSReporte5.resx">
+      <DependentUpon>FormSReporte5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoTrabajador1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoProductos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MásVendidos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sell %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\digital-receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groceries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimarket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirForms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título %281315 x 150 px%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{63056f00-e862-4b39-bc55-b9d50392d602}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{92f95ee7-473a-4858-b64f-c1fd2adf82f3}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+</Project>
